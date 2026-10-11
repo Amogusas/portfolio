@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saveliy — Freelance Web Developer</title>
+  <meta name="description" content="Freelance web developer building clean, modern, responsive websites for small businesses. View projects, services, and get in touch." />
+  <meta name="theme-color" content="#0a0b0e" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Adds a class early so reveal animations never leave content hidden if JS is off. -->
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Saveliy, back to top">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-name">Saveliy</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open menu"
+      >
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="#contact">Start a project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <p class="eyebrow" data-reveal><span class="dot" aria-hidden="true"></span> Freelance web developer</p>
+        <h1 id="hero-title" class="hero-title" data-reveal>
+          I build clean, modern websites for <span class="accent">small businesses.</span>
+        </h1>
+        <p class="hero-lead" data-reveal>
+          I'm a web developer focused on simple, fast, responsive sites that make a
+          small business look credible online — without the bloat.
+        </p>
+        <div class="hero-actions" data-reveal>
+          <a class="btn btn-primary" href="#work">View my work</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">01 — Work</p>
+          <h2 id="work-title">Selected projects</h2>
+          <p class="section-lead">
+            Two recent builds — a corporate website for a fuel-equipment
+            company and a landing page for a booking product.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="card project" data-reveal>
+            <div class="project-shot">
+              <img
+                src="assets/img/photo_2026-10-11_15-51-54.jpg"
+                alt="Homepage of the АЗС Технологии website: a filling-station photo behind the headline “Подключение и ремонт ТРК” with four service cards below."
+                width="1280"
+                height="886"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <span class="badge">Corporate site</span>
+                <span class="project-index">АЗС · ТРК</span>
+              </div>
+              <h3>АЗС Технологии</h3>
+              <p>
+                A corporate website for a company that builds and services
+                filling stations — equipment catalogue, services, company news,
+                and contacts in one place.
+              </p>
+              <ul class="tags" aria-label="Built with">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card project" data-reveal>
+            <div class="project-shot">
+              <img
+                src="assets/img/photo_2026-10-11_15-52-04.jpg"
+                alt="Hero of a booking landing page: the headline “Онлайн-запись, которая окупает себя за первый визит” above two buttons on a dark background."
+                width="1280"
+                height="749"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <span class="badge">Landing page</span>
+                <span class="project-index">Beauty booking</span>
+              </div>
+              <h3>Online booking for beauty pros</h3>
+              <p>
+                A landing page for a booking service aimed at independent beauty
+                professionals: a personal page where clients book themselves in
+                three clicks, without calls or messages.
+              </p>
+              <ul class="tags" aria-label="Built with">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Responsive</li>
+                <li>Motion</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section section-alt" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">02 — Services</p>
+          <h2 id="services-title">How I can help</h2>
+          <p class="section-lead">Focused work, clearly scoped, built to last.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="card service" data-reveal>
+            <span class="service-num" aria-hidden="true">01</span>
+            <h3>One-page websites</h3>
+            <p>
+              A single, focused page that tells people who you are, what you
+              offer, and how to reach you.
+            </p>
+          </article>
+          <article class="card service" data-reveal>
+            <span class="service-num" aria-hidden="true">02</span>
+            <h3>Responsive design</h3>
+            <p>
+              Layouts that adapt cleanly from small phones to large desktops,
+              with comfortable tap targets and no awkward overflow.
+            </p>
+          </article>
+          <article class="card service" data-reveal>
+            <span class="service-num" aria-hidden="true">03</span>
+            <h3>Small website improvements</h3>
+            <p>
+              Fixes and tidy-ups: mobile issues, clearer layout, faster loading,
+              and small content or style updates.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">03 — Process</p>
+          <h2 id="process-title">A simple, predictable process</h2>
+          <p class="section-lead">Three steps from first message to finished site.</p>
+        </div>
+
+        <ol class="process-list">
+          <li class="process-step" data-reveal>
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3>Discuss</h3>
+            <p>
+              We talk about your goals, your customers, and what the site needs
+              to do. You get a clear plan and a fixed scope before anything is
+              built.
+            </p>
+          </li>
+          <li class="process-step" data-reveal>
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3>Build</h3>
+            <p>
+              I design and build the site, checking it on real screen sizes as I
+              go. You can follow progress and give feedback along the way.
+            </p>
+          </li>
+          <li class="process-step" data-reveal>
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3>Review</h3>
+            <p>
+              We go through it together, I make the final tweaks, and you get a
+              clean, well-organised site you can keep or grow.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section-alt" id="about" aria-labelledby="about-title">
+      <div class="container about-inner">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">04 — About</p>
+          <h2 id="about-title">A short introduction</h2>
+        </div>
+        <div class="about-copy" data-reveal>
+          <p>
+            I'm <strong>Saveliy</strong>, a web developer who helps small
+            businesses get a professional, easy-to-maintain presence online. I
+            keep things deliberately simple: clean layouts, readable type, and
+            pages that load quickly.
+          </p>
+          <p>
+            I'm early in my freelance journey, so I'm selective about the work I
+            take on and honest about what I can deliver. If your project is a
+            good fit, I'll tell you — and if it isn't, I'll say so too.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-inner" data-reveal>
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Let's build something straightforward.</h2>
+        <p class="contact-lead">
+          Have a project in mind, or not sure where to start? Send me a message
+          and I'll get back to you.
+        </p>
+        <a class="btn btn-primary btn-lg" href="mailto:stupapupa228777@gmail.com">stupapupa228777@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Saveliy — Freelance web developer</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-legal">© <span id="year">2026</span> Saveliy. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
